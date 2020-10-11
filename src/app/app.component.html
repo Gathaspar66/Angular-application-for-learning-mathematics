@@ -35,23 +35,25 @@
   </head>
   <body>
     <div class="bg">
-      <app-navbar></app-navbar>
+      <div *ngIf="router.url === '/'">
+        <app-start-page></app-start-page>
+      </div>
 
-    <div *ngIf="router.url === '/'">
-      <app-start-page></app-start-page>
-    </div>
+      <div *ngIf="router.url !== '/'">
+        <app-navbar></app-navbar>
+      </div>
 
-    <div *ngIf="router.url === '/category'">
-      <app-category></app-category>
-    </div>
+      <div *ngIf="router.url === '/category'">
+        <app-category></app-category>
+      </div>
 
-    <div *ngIf="router.url === '/category-list'">
-      <app-category-list></app-category-list>
-    </div>
+      <div *ngIf="router.url === '/category-list'">
+        <app-category-list></app-category-list>
+      </div>
 
-    <div *ngIf="router.url == '/tasks'">
-      <app-tasks></app-tasks>
+      <div *ngIf="router.url == '/tasks'">
+        <app-tasks></app-tasks>
+      </div>
     </div>
-</div>
   </body>
 </html>

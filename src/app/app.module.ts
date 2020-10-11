@@ -10,6 +10,7 @@ import { CategoryComponent } from './category/category.component';
 import { CategoryListComponent } from './category-list/category-list.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     NavbarComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
