@@ -47,13 +47,24 @@
         <app-category></app-category>
       </div>
 
-      <div *ngIf="router.url === '/category-list'">
-        <app-category-list></app-category-list>
+      <div *ngIf="router.url === '/category-class'">
+        <app-category-class></app-category-class>
       </div>
 
+      <div  *ngIf="router.url === '/list?id=1'">
+        <app-list></app-list>
+      </div>
+      <div  *ngIf="router.url === '/list?id=2'">
+        <app-list></app-list>
+      </div>
+      <div  *ngIf="router.url === '/list?id=3'">
+        <app-list></app-list>
+      </div>
+    
       <div *ngIf="router.url == '/tasks'">
         <app-tasks></app-tasks>
       </div>
+
     </div>
   </body>
 </html>

@@ -7,7 +7,10 @@ import { Router, RouterLinkWithHref } from '@angular/router';
 })
 export class AppComponent {
   title = 'Inzynierka';
-  constructor(public router: Router){}
+  constructor(public router: Router){
+    this.category=[1,2,3];
+  }
+  category:Array<number>;
   
     
 }
