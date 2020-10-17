@@ -1,18 +1,22 @@
 [{
     "id": "1",
-    "name": "Dodawanie"
+    "name": "Dodawanie",
+    "idCategory": "1"
   
 },
 {
     "id": "1",
-    "name": "Odejmowanie"
-  
+    "name": "Odejmowanie",
+    "idCategory": "2"
 },
 {
     "id": "1",
-    "name": "Mnożenie"
-  
+    "name": "Mnożenie",
+    "idCategory": "3"
 },
+
+
+
 {
     "id": "2",
     "name": "2"

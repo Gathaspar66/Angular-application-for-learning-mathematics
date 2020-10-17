@@ -2,6 +2,8 @@
 {{this.id}}
 <ul *ngFor="let oneCategory of category" >
 
-
-    <li *ngIf="oneCategory.id==1">{{oneCategory.name}} </li>
+    <a *ngIf="oneCategory.id==1" routerLink="/tasks"
+    ><button class="btn btn-success" (click)="onSubmit(oneCategory.idCategory)">{{oneCategory.name}}</button></a
+  >
+    
 </ul> 

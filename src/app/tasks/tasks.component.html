@@ -1,1 +1,6 @@
 <p>tasks works!</p>
+<ul *ngFor="let oneTask of tasks" >
+
+    <a *ngIf="oneTask.idCategory==1" ><div>{{oneTask.content}} {{oneTask.action}} {{oneTask.correct_answer}}</div></a>
+    
+</ul> 

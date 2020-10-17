@@ -9,7 +9,7 @@ const routes: Routes = [
 {path: '',component: StartPageComponent},
 { path: 'category', component: CategoryComponent },
 { path: 'list', component: ListComponent },
-{ path: 'task', component: TasksComponent},
+{ path: 'tasks', component: TasksComponent},
 {path:'category-class',component: CategoryComponent}
 ];
 
