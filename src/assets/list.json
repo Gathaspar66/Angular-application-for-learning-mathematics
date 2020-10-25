@@ -14,15 +14,15 @@
     "name": "Mnożenie",
     "idCategory": "3"
 },
-
-
-
 {
     "id": "2",
-    "name": "2"
+    "name": "Odejmowanie",
+    "idCategory": "4"
+    
 },
 {
     "id": "3",
-    "name": "3"
+    "name": "Mnożenie",
+    "idCategory": "5"
 }
 ]

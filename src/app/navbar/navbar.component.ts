@@ -10,9 +10,17 @@ import { IdbService } from '../services/idb.service';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
+  currentDate: number = Date.now();
   user: User;
   login: any;
-  constructor(private idb: IdbService) {}
+  interval: any;
+  constructor(private idb: IdbService) {
+
+    this.interval = setInterval(() => {
+      this.currentDate = Date.now();
+      
+    }, 1000);
+  }
 
   ngOnInit(): void {
     this.idb.getUserName().then((name) => {

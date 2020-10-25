@@ -5,8 +5,11 @@
 <body>
 
     <div class="navbar  " >
-        <i class="fa fa-futbol-o"  aria-hidden="true"></i>
-        <p style="font-size: 2rem;">{{login}}</p>
+      <div class="contentTime">
+        
+        <p style="font-size: 2rem;">{{ currentDate | date: 'HH:mm:ss' }}</p>
+      </div>
+        <p style="font-size: 2rem; color: white;">{{login}}</p>
       </div>
 </body>
 

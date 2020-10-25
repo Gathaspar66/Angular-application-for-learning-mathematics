@@ -1,0 +1,21 @@
+.form-group1 {
+    margin-top: 5rem;
+    text-align: center;
+    overflow: scroll;
+  }
+  .square_back {
+    font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #00bcd4;
+    transition: .4s;
+    
+    text-align: right;
+    width: max-content;
+    margin-top: 1vh;
+    margin-right: 1vh;
+  }

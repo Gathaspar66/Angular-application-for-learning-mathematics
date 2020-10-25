@@ -1,9 +1,15 @@
-<p>list works!</p>
-{{this.id}}
-<ul *ngFor="let oneCategory of category" >
+<a href="#" class="square_back d-block mr-1vh ml-auto" routerLink="/category-class"><i class="fa fa-chevron-left"></i> Powrót</a>
 
-    <a *ngIf="oneCategory.id==1" routerLink="/tasks"
-    ><button class="btn btn-success" (click)="onSubmit(oneCategory.idCategory)">{{oneCategory.name}}</button></a
-  >
-    
-</ul> 
+<div class="form-group1" style="overflow: scroll; height: 50vh">
+  <ul *ngFor="let oneCategory of category">
+    <a *ngIf="oneCategory.id == id" routerLink="/tasks"
+      ><button
+        style="width: 15rem; font-size: 2rem"
+        class="btn btn-success"
+        (click)="onSubmit(oneCategory.idCategory)"
+      >
+        {{ oneCategory.name }}
+      </button></a
+    >
+  </ul>
+</div>
