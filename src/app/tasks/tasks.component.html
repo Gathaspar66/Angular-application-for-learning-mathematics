@@ -1,39 +1,88 @@
 
-<div><a href="#" class="square_btn">Dobrze {{points}} <i class="fa fa-check" aria-hidden="true"></i></a> <a href="#" class="square_back" routerLink="/category-class"><i class="fa fa-chevron-left"></i> Powrót</a></div>
-<a href="#" class="square_btn1">Źle {{wrong}} <i class="fa fa-times" aria-hidden="true"></i></a>
+<div><a  class="square_btn">Dobrze {{points}} <i class="fa fa-check" aria-hidden="true"></i></a> <a href="#" class="square_back" routerLink="/category-class"><i class="fa fa-chevron-left"></i> Powrót</a></div>
+<a  class="square_btn1">Źle {{wrong}} <i class="fa fa-times" aria-hidden="true"></i></a>
 
 <div class="form-group1">
   
-<ul *ngFor="let oneTask of tasks" >
+<div *ngFor="let oneTask of tasks" style="margin-top: -50px;" >
 
-    <a *ngIf="oneTask.idCategory==idCategory && oneTask.id == temp" ><div >{{oneTask.content}} <div style="font-size: 6rem;">{{oneTask.action}}  </div> 
+    <a *ngIf="oneTask.idCategory==idCategory && oneTask.id == temp" style="margin-top: 22rem;"><div >{{oneTask.content}} <div style="font-size: 6rem;">{{oneTask.action}}  </div> 
 
       <!-- <img src="">   -->  
 
-<ul class="list" id="noneDotsList">
-    <table style="width: 100%" >
+
+    <table style="width: 80%;margin-left: 10%;margin-right: 10%;">
       <tr>
         <th>
-            <button class="btn btn-success" (click)="checkAnswer(oneTask.answer_a,oneTask.correct_answer)" >{{oneTask.answer_a}}</button>
+            <button class="btn btn-success" (click)="checkAnswer(oneTask.answer_a,oneTask.correct_answer,templateConfirm)" >{{oneTask.answer_a}}</button>
          
         </th>
         <th>
             
-            <button class="btn btn-info" (click)="checkAnswer(oneTask.answer_b,oneTask.correct_answer)">{{oneTask.answer_b}}</button>
+            <button class="btn btn-info" (click)="checkAnswer(oneTask.answer_b,oneTask.correct_answer,templateConfirm)">{{oneTask.answer_b}}</button>
           
         </th>
         <th>
-            <button class="btn btn-danger" (click)="checkAnswer(oneTask.answer_c,oneTask.correct_answer)">{{oneTask.answer_c}}</button>
+            <button class="btn btn-danger" (click)="checkAnswer(oneTask.answer_c,oneTask.correct_answer,templateConfirm)">{{oneTask.answer_c}}</button>
         </th>
         <th>
-            <button class="btn btn-primary" (click)="checkAnswer(oneTask.answer_d,oneTask.correct_answer)">{{oneTask.answer_d}}</button>
+            <button class="btn btn-primary" (click)="checkAnswer(oneTask.answer_d,oneTask.correct_answer,templateConfirm)">{{oneTask.answer_d}}</button>
         </th>
       </tr>
       
+      
+
     </table>
   
-  </ul>
+  
 </div></a>
-</ul> 
+</div> 
+
+<ng-template #templateConfirm>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-title">Powiadomienie</h4>
+    <button
+      type="button"
+      class="close pull-right"
+      aria-label="Close"
+      (click)="modalRef.hide()"
+    >
+      <span
+        aria-hidden="true"
+        style="
+          float: right;
+          font-size: 60px;
+          color: white;
+          margin-top: -15px;
+        "
+      >&times;</span
+      >
+    </button>
+  </div>
+  <div class="modal-body" id="main">
+    <p>
+      <strong>Hurra udało Ci sie pomyślnie to zrobić. </strong>
+    </p>
+    
+  </div>
+  <div class="modal-footer" id="footer">
+    <button
+      type="button"
+      class="btn-dark"
+      id="releaseRoomBtn"
+      
+    >
+      Release room
+    </button>
+    <button
+      type="button"
+      class="btn-dark"
+      id="releaseRoomBtn"
+      
+    >
+      Release room
+    </button>
+  </div>
+</ng-template>
 
 </div>

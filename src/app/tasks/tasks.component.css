@@ -1,5 +1,5 @@
 .form-group1 {
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: center;
     font-size: 3rem;
     
@@ -8,13 +8,13 @@
 .list{
 
     text-align: center;
-    margin-top: 9rem;
+    margin-top: 2rem;
    
 
 }
 .btn {
-    width: 10rem;
-    font-size: 2rem;
+    width: 7rem;
+    font-size: 3rem;
   }
   .square_btn{
     display: inline-block;

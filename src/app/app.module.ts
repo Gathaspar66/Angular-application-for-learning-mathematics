@@ -7,7 +7,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { StartPageComponent } from './start-page/start-page.component';
 import { CategoryComponent } from './category/category.component';
-
+import { ModalModule } from 'ngx-bootstrap/modal';
 import { TasksComponent } from './tasks/tasks.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
@@ -30,7 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     BrowserModule,
     HttpClientModule,
-    
+    ModalModule.forRoot(),
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],

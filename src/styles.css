@@ -1,6 +1,6 @@
 
 html{
-    font-size: calc(15px + (16 - 10)*(100vw - 600px)/(1920 - 1080));
+    font-size: calc(10px + (20 - 10)*(100vw - 400px)/(1920 - 400));
     background-image: url(./image/back.png);
   }
 
