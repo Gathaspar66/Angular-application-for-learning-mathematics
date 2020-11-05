@@ -15,6 +15,7 @@
         <div class="form-group1">
           <h3 class="form-signin-heading">Wpisz imie</h3>
           <input
+          maxlength="10"
             type="name"
             class="form-control"
             required
@@ -27,52 +28,111 @@
 
           <div id="startPanelHeader"></div>
           <div id="startPanelBody">
-            <ul id="noneDotsList" style="overflow: scroll; height: 20vh">
+            <ul id="noneDotsList" style="overflow: scroll; height: 25vh">
               <table style="width: 100%">
                 <tr>
                   <th>
-                    <div *ngIf="isClicked"></div>
-                    <div [ngStyle]="isClicked && { color: 'red' }">
+                    
+                    <div [ngStyle]="isClicked=='fa fa-futbol-o' && { color: 'red' }">
                       <i
                         class="fa fa-futbol-o"
                         aria-hidden="true"
                         style="font-size: 2rem"
-                        (click)="tak(isClicked)"
+                        
+                        
+                        
+                        (click)="tak('fa fa-futbol-o')"
                       ></i>
                     </div>
                   </th>
                   <th>
-                    <div *ngIf="isClicked1"></div>
-                    <div [ngStyle]="isClicked1 && { color: 'red' }">
+                    
+                    <div [ngStyle]="isClicked=='fa fa-taxi' && { color: 'red' }">
                       <i
                         class="fa fa-taxi"
                         aria-hidden="true"
                         style="font-size: 2rem"
-                        (click)="tak1(isClicked1)"
+                        
+                        (click)="tak('fa fa-taxi')"
                       ></i>
                     </div>
                   </th>
                   <th>
-                    <div *ngIf="isClicked2"></div>
-                    <div [ngStyle]="isClicked2 && { color: 'red' }">
+                    
+                    <div [ngStyle]="isClicked=='fa fa-bicycle' && { color: 'red' }">
                       <i
                         class="fa fa-bicycle"
                         aria-hidden="true"
                         style="font-size: 2rem"
-                        (click)="tak2(isClicked2)"
+                        
+                        (click)="tak('fa fa-bicycle')"
                       ></i>
                     </div>
                   </th>
                 </tr>
                 <tr>
-                  <td>xx</td>
-                  <td>xx</td>
-                  <td>xx</td>
+                  <td> 
+                    <div [ngStyle]="isClicked=='fa fa-anchor' && { color: 'red' }">
+                      <i
+                      class="fa fa-anchor"
+                        aria-hidden="true"
+                        style="font-size: 2rem"
+                        
+                        (click)="tak('fa fa-anchor')"
+                      ></i>
+                    </div></td>
+                  <td> 
+                    <div [ngStyle]="isClicked=='fa fa-motorcycle' && { color: 'red' }">
+                      <i
+                      class="fa fa-motorcycle"
+                        aria-hidden="true"
+                        style="font-size: 2rem"
+                        
+                        (click)="tak('fa fa-motorcycle')"
+                      ></i>
+                    </div></td>
+                  <td> 
+                    <div [ngStyle]="isClicked=='fa fa-plane' && { color: 'red' }">
+                      <i
+                      class="fa fa-plane"
+                        aria-hidden="true"
+                        style="font-size: 2rem"
+                        
+                        (click)="tak('fa fa-plane')"
+                      ></i>
+                    </div></td>
                 </tr>
                 <tr>
-                  <td>xx</td>
-                  <td>xx</td>
-                  <td>xx</td>
+                  <td> 
+                    <div [ngStyle]="isClicked=='fa fa-space-shuttle' && { color: 'red' }">
+                      <i
+                      class="fa fa-space-shuttle"
+                        aria-hidden="true"
+                        style="font-size: 2rem"
+                       
+                        (click)="tak('fa fa-space-shuttle')"
+                      ></i>
+                    </div></td>
+                  <td> 
+                    <div [ngStyle]="isClicked=='fa fa-truck' && { color: 'red' }">
+                      <i
+                      class="fa fa-truck"
+                        aria-hidden="true"
+                        style="font-size: 2rem"
+                       
+                        (click)="tak('fa fa-truck')"
+                      ></i>
+                    </div></td>
+                  <td> 
+                    <div [ngStyle]="isClicked=='fa fa-train'&& { color: 'red' }">
+                      <i
+                      class="fa fa-train"
+                        aria-hidden="true"
+                        style="font-size: 2rem"
+                        
+                        (click)="tak('fa fa-train')"
+                      ></i>
+                    </div></td>
                 </tr>
               </table>
               <div></div>

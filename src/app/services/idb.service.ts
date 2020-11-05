@@ -26,7 +26,7 @@ export class IdbService {
   createDb() {
     this.db = new Dexie('LearnApp');
     this.db.version(1).stores({
-      scores: 'task_id, score, user_id',
+      scores: '++id, &category_id, is_correct',
       users: '++user_id, name, avatar',
     });
   }
@@ -37,18 +37,26 @@ export class IdbService {
   addUser(user: User) {
     this.db.users.add({
       name: user.name,
-      avatar: 'aaa',
+      avatar: user.avatar,
     });
   }
 
-  public addScores(taskId: number, userId: number) {
+  public addScores(categoryId: string, isCorrect: boolean) {
     this.db.scores.add({
-      user_id: userId,
-      task_id: taskId,
+      category_id: categoryId,
+      is_correct: isCorrect,
     });
   }
 
   getUserName(): Promise<any> {
     return this.db.users.get(1).then((res) => res.name);
+  }
+  getAvatar(): Promise<any> {
+    return this.db.users.get(1).then((res) => res.avatar);
+  }
+
+  getScores():Promise<any>{
+    return this.db.scores.orderBy('category_id').keys('category_id');
+  
   }
 }

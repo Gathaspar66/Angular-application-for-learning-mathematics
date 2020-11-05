@@ -6,36 +6,58 @@
   
 <div *ngFor="let oneTask of tasks" style="margin-top: -50px;" >
 
-    <a *ngIf="oneTask.idCategory==idCategory && oneTask.id == temp" style="margin-top: 22rem;"><div >{{oneTask.content}} <div style="font-size: 6rem;">{{oneTask.action}}  </div> 
+    <a *ngIf="oneTask.idCategory==idCategory && oneTask.id == temp" style="margin-top: 30rem;text-align: center; "><div style="margin-left: 35vh;margin-right: 35vh; text-align: center;"  >{{oneTask.content}} <div style="font-size: 6rem;">{{oneTask.action}}  </div> </div>
 
       <!-- <img src="">   -->  
-
-
-    <table style="width: 80%;margin-left: 10%;margin-right: 10%;">
-      <tr>
-        <th>
-            <button class="btn btn-success" (click)="checkAnswer(oneTask.answer_a,oneTask.correct_answer,templateConfirm)" >{{oneTask.answer_a}}</button>
-         
-        </th>
-        <th>
-            
-            <button class="btn btn-info" (click)="checkAnswer(oneTask.answer_b,oneTask.correct_answer,templateConfirm)">{{oneTask.answer_b}}</button>
+      <div *ngIf="oneTask.isInput=='false'; else elseBlock">
+        
+        <table style="width: 80%;margin-left: 10%;margin-right: 10%;">
+          <tr>
+            <th>
+                <button class="btn btn-success" (click)="checkAnswer(oneTask.answer_a,oneTask.correct_answer,templateConfirm)" >{{oneTask.answer_a}}</button>
+             
+            </th>
+            <th>
+                
+                <button class="btn btn-info" (click)="checkAnswer(oneTask.answer_b,oneTask.correct_answer,templateConfirm)">{{oneTask.answer_b}}</button>
+              
+            </th>
+            <th>
+                <button class="btn btn-danger" (click)="checkAnswer(oneTask.answer_c,oneTask.correct_answer,templateConfirm)">{{oneTask.answer_c}}</button>
+            </th>
+            <th>
+                <button class="btn btn-primary" (click)="checkAnswer(oneTask.answer_d,oneTask.correct_answer,templateConfirm)">{{oneTask.answer_d}}</button>
+            </th>
+          </tr>
           
-        </th>
-        <th>
-            <button class="btn btn-danger" (click)="checkAnswer(oneTask.answer_c,oneTask.correct_answer,templateConfirm)">{{oneTask.answer_c}}</button>
-        </th>
-        <th>
-            <button class="btn btn-primary" (click)="checkAnswer(oneTask.answer_d,oneTask.correct_answer,templateConfirm)">{{oneTask.answer_d}}</button>
-        </th>
-      </tr>
-      
+          
+    
+        </table>
+
+
+
+
+
       
 
-    </table>
+      
+    
   
-  
-</div></a>
+</div>
+<ng-template #elseBlock>
+
+  <form (ngSubmit)="checkAnswer(numberFromInput,oneTask.correct_answer,templateConfirm)">
+    <div class="form-group">
+      <input [(ngModel)]="numberFromInput" name="name" maxlength="3" type="number" class="form-control" style="font-size:1.5rem;width: 20vh;text-align:center ;width: 50%;margin-left: 25%;margin-right: 25%;">
+      <button type="submit" class="btn2 btn-primary" style="margin-top: 1vh;font-size: 2rem;">Sprawdź</button>
+    </div>
+    
+  </form>
+
+
+
+</ng-template>
+</a>
 </div> 
 
 <ng-template #templateConfirm>

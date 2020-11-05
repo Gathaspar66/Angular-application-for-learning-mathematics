@@ -1,0 +1,100 @@
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2020-11-01 18:57:50
+count workspace : d:\Projekt\inzynierka
+total files : 76
+total code lines : 15801
+total comment lines : 120
+total blank lines : 293
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |          .json|          14520|              4|             41|     92|
+   |            .ts|            569|             74|            135|    3.6|
+   |           .css|            182|              0|             22|    1.2|
+   |   .webmanifest|             59|              0|              0|   0.37|
+   |          .html|            351|              4|             67|    2.2|
+   |               |             50|             24|             11|   0.32|
+   |            .md|             14|              5|             13|  0.089|
+   |            .js|             56|              9|              4|   0.35|
+   -------------------------------------------------------------------------
+.browserslistrc, code is 15, comment is 2, blank is 3.
+.editorconfig, code is 13, comment is 1, blank is 3.
+.gitignore, code is 22, comment is 21, blank is 5.
+angular.json, code is 126, comment is 0, blank is 6.
+e2e\protractor.conf.js, code is 27, comment is 6, blank is 3.
+e2e\src\app.e2e-spec.ts, code is 18, comment is 1, blank is 4.
+e2e\src\app.po.ts, code is 9, comment is 0, blank is 2.
+e2e\tsconfig.json, code is 12, comment is 1, blank is 1.
+karma.conf.js, code is 29, comment is 3, blank is 1.
+ngsw-config.json, code is 28, comment is 0, blank is 2.
+package-lock.json, code is 13998, comment is 0, blank is 0.
+package.json, code is 51, comment is 0, blank is 0.
+README.md, code is 14, comment is 5, blank is 13.
+src\app\app-routing.module.ts, code is 18, comment is 0, blank is 2.
+src\app\app.component.css, code is 9, comment is 0, blank is 0.
+src\app\app.component.html, code is 64, comment is 0, blank is 6.
+src\app\app.component.spec.ts, code is 31, comment is 0, blank is 4.
+src\app\app.component.ts, code is 14, comment is 0, blank is 2.
+src\app\app.module.ts, code is 37, comment is 0, blank is 3.
+src\app\category-class\category-class.component.css, code is 30, comment is 0, blank is 2.
+src\app\category-class\category-class.component.html, code is 22, comment is 1, blank is 6.
+src\app\category-class\category-class.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\category-class\category-class.component.ts, code is 11, comment is 0, blank is 4.
+src\app\category\category.component.css, code is 12, comment is 0, blank is 2.
+src\app\category\category.component.html, code is 16, comment is 1, blank is 0.
+src\app\category\category.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\category\category.component.ts, code is 11, comment is 0, blank is 4.
+src\app\list\list.component.css, code is 20, comment is 0, blank is 1.
+src\app\list\list.component.html, code is 25, comment is 0, blank is 5.
+src\app\list\list.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\list\list.component.ts, code is 41, comment is 0, blank is 16.
+src\app\models\user.model.spec.ts, code is 6, comment is 0, blank is 1.
+src\app\models\user.model.ts, code is 5, comment is 0, blank is 0.
+src\app\navbar\navbar.component.css, code is 34, comment is 0, blank is 2.
+src\app\navbar\navbar.component.html, code is 12, comment is 0, blank is 12.
+src\app\navbar\navbar.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\navbar\navbar.component.ts, code is 31, comment is 0, blank is 6.
+src\app\services\idb.service.spec.ts, code is 12, comment is 0, blank is 4.
+src\app\services\idb.service.ts, code is 52, comment is 2, blank is 8.
+src\app\services\task.service.spec.ts, code is 12, comment is 0, blank is 4.
+src\app\services\task.service.ts, code is 14, comment is 0, blank is 8.
+src\app\start-page\start-page.component.css, code is 18, comment is 0, blank is 6.
+src\app\start-page\start-page.component.html, code is 137, comment is 1, blank is 16.
+src\app\start-page\start-page.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\start-page\start-page.component.ts, code is 29, comment is 0, blank is 6.
+src\app\tasks\tasks.component.css, code is 55, comment is 0, blank is 7.
+src\app\tasks\tasks.component.html, code is 62, comment is 1, blank is 20.
+src\app\tasks\tasks.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\tasks\tasks.component.ts, code is 64, comment is 0, blank is 12.
+src\assets\.gitkeep, code is 0, comment is 0, blank is 0.
+src\assets\biedra.jpg, it is a binary file.
+src\assets\class.json, code is 13, comment is 0, blank is 1.
+src\assets\icons\icon-128x128.png, it is a binary file.
+src\assets\icons\icon-144x144.png, it is a binary file.
+src\assets\icons\icon-152x152.png, it is a binary file.
+src\assets\icons\icon-192x192.png, it is a binary file.
+src\assets\icons\icon-384x384.png, it is a binary file.
+src\assets\icons\icon-512x512.png, it is a binary file.
+src\assets\icons\icon-72x72.png, it is a binary file.
+src\assets\icons\icon-96x96.png, it is a binary file.
+src\assets\list.json, code is 26, comment is 0, blank is 2.
+src\assets\tasks.json, code is 85, comment is 0, blank is 8.
+src\environments\environment.prod.ts, code is 3, comment is 0, blank is 0.
+src\environments\environment.ts, code is 3, comment is 11, blank is 2.
+src\favicon.ico, it is a binary file.
+src\image\back.png, it is a binary file.
+src\index.html, code is 13, comment is 0, blank is 2.
+src\main.ts, code is 9, comment is 0, blank is 3.
+src\manifest.webmanifest, code is 59, comment is 0, blank is 0.
+src\polyfills.ts, code is 1, comment is 56, blank is 7.
+src\styles.css, code is 4, comment is 0, blank is 2.
+src\test.ts, code is 18, comment is 4, blank is 3.
+tsconfig.app.json, code is 12, comment is 1, blank is 2.
+tsconfig.json, code is 18, comment is 1, blank is 1.
+tsconfig.spec.json, code is 14, comment is 1, blank is 3.
+tslint.json, code is 137, comment is 0, blank is 15.
+===============================================================================

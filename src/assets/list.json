@@ -1,28 +1,33 @@
 [{
     "id": "1",
-    "name": "Dodawanie",
-    "idCategory": "1"
+    "idCategory": "1",
+    "name": "Dodawanie"
+    
   
 },
 {
     "id": "1",
-    "name": "Odejmowanie",
-    "idCategory": "2"
+    "idCategory": "2",
+    "name": "Odejmowanie"
+    
 },
 {
     "id": "1",
-    "name": "Mnożenie",
-    "idCategory": "3"
+    "idCategory": "3",
+    "name": "Mnożenie"
+    
 },
 {
     "id": "2",
-    "name": "Odejmowanie",
-    "idCategory": "4"
+    "idCategory": "4",
+    "name": "Odejmowanie"
+    
     
 },
 {
     "id": "3",
-    "name": "Mnożenie",
-    "idCategory": "5"
+    "idCategory": "5",
+    "name": "Mnożenie"
+    
 }
 ]

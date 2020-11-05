@@ -1,80 +1,28 @@
 [{
+    "idCategory": "1",
     "id": "1",
     "content": "Oblicz:",
     "action":"2+2",
-    "correct_answer": "4",
-    "idCategory": "1",
     "photo": "assets/biedra.jpg",
+    "isInput":"false",
+    "correct_answer": "4",
     "answer_a": "4",
     "answer_b": "2",
     "answer_c": "1",
     "answer_d": "5"
 },
 {
+    "idCategory": "1",
     "id": "2",
     "content": "Oblicz:",
     "action":"2+3",
+    "photo": "assets/biedra.jpg",
+    "isInput":"true",
     "correct_answer": "5",
-    "idCategory": "1",
-    "photo": "1",
-    "answer_a": "1",
-    "answer_b": "2",
-    "answer_c": "5",
-    "answer_d": "4"
-
-},
-{
-    "id": "1",
-    "content": "Oblicz:",
-    "action":"2-4=",
-    "correct_answer": "4",
-    "idCategory": "2",
-    "photo": "1"
-
-},
-{
-    "id": "2",
-    "content": "Oblicz :",
-    "action":"2-4=",
-    "correct_answer": "4",
-    "idCategory": "2",
-    "photo": "1"
-
-},
-
-{
-    "id": "1",
-    "content": "Oblicz :",
-    "action":"2*2=",
-    "correct_answer": "0",
-    "idCategory": "3",
-    "photo": "1"
-},
-{
-    "id": "2",
-    "content": "Oblicz :",
-    "action":"2*1=",
-    "correct_answer": "4",
-    "idCategory": "3",
-    "photo": "1"
-
-},
-{
-    "id": "3",
-    "content": "Oblicz :",
-    "action":"2*1=",
-    "correct_answer": "4",
-    "idCategory": "3",
-    "photo": "1"
-
-},
-{
-    "id": "1",
-    "content": "Oblicz :",
-    "action":"2*1=",
-    "correct_answer": "4",
-    "idCategory": "4",
-    "photo": "1"
-
+    "answer_a": "",
+    "answer_b": "",
+    "answer_c": "",
+    "answer_d": ""
 }
+
 ]

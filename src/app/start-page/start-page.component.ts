@@ -11,7 +11,9 @@ export class StartPageComponent implements OnInit {
   user: User = new User();
   constructor(private idb: IdbService, private route: Router) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.nie();
+  }
 
   createUser() {
     this.idb.addUser(this.user);
@@ -19,25 +21,15 @@ export class StartPageComponent implements OnInit {
     this.route.navigate(['/category']);
   }
 
-  isClicked: boolean;
-  isClicked1: boolean;
-  isClicked2: boolean;
-
-  tak(boolean) {
-    this.isClicked = true;
-    this.isClicked1 = false;
-    this.isClicked2 = false;
+  isClicked: string;
+  avatar:string;
+  nie(){
+    this.user.avatar='fa fa-wheelchair';
   }
+  
 
-  tak1(boolean) {
-    this.isClicked = false;
-    this.isClicked1 = true;
-    this.isClicked2 = false;
-  }
-
-  tak2(boolean) {
-    this.isClicked = false;
-    this.isClicked1 = false;
-    this.isClicked2 = true;
+  tak(avatar) {
+    this.isClicked = avatar;
+   this.user.avatar=avatar;
   }
 }

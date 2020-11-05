@@ -1,22 +1,18 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class TaskService {
+  constructor() {}
 
-  constructor() { }
+  idCategory: string;
 
-idCategory:string;
-
-
-setidCategory(idCategory){
-
-  this.idCategory=idCategory;
-}
-getidCategory(){
-
-return this.idCategory
-}
-
+  setidCategory(idCategory) {
+    this.idCategory = idCategory;
+    
+  }
+  getidCategory() {
+    return this.idCategory;
+  }
 }
