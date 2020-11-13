@@ -26,7 +26,7 @@ export class TasksComponent implements OnInit {
     this.idCategory = this.taskService.getidCategory();
     this.pointsService.setPoints(this.wrong)
     this.getData();
-    this.getRandomInt(1, 3);
+    this.getRandomInt(1, 7);
   }
   getData() {
     this.httpService.get('../assets/tasks.json').subscribe((data) => {
@@ -56,7 +56,7 @@ export class TasksComponent implements OnInit {
   checkAnswer(number, correct_answer, template) {
     if (number == correct_answer) {
       this.points++;
-      if (this.points == 1) {
+      if (this.points == 10 && this.wrong<3) {
         this.openModal(template);
         this.idb.addScores(this.idCategory, true);
       }
@@ -69,7 +69,7 @@ export class TasksComponent implements OnInit {
       
     }
 
-    this.getRandomInt(1, 3);
+    this.getRandomInt(1, 7);
     this.numberFromInput=null;
   }
 }

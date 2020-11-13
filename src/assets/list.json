@@ -14,20 +14,63 @@
 {
     "id": "1",
     "idCategory": "3",
-    "name": "Mnożenie"
+    "name": "Podstawowe Mnożenie"
     
 },
 {
     "id": "2",
     "idCategory": "4",
+    "name": "Dodawanie"
+    
+    
+},
+{
+    "id": "2",
+    "idCategory": "5",
+    "name": "Odejmowanie"
+    
+    
+},
+{
+    "id": "2",
+    "idCategory": "6",
+    "name": "Mnożenie"
+    
+    
+},
+{
+    "id": "2",
+    "idCategory": "7",
+    "name": "Dzielenie"
+    
+    
+},
+{
+    "id": "3",
+    "idCategory": "8",
+    "name": "Dodawanie"
+    
+    
+},
+{
+    "id": "3",
+    "idCategory": "9",
     "name": "Odejmowanie"
     
     
 },
 {
     "id": "3",
-    "idCategory": "5",
+    "idCategory": "10",
     "name": "Mnożenie"
+    
+    
+},
+{
+    "id": "3",
+    "idCategory": "11",
+    "name": "Dzielenie"
+    
     
 }
 ]

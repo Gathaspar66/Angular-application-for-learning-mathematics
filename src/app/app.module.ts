@@ -15,6 +15,7 @@ import { CategoryClassComponent } from './category-class/category-class.componen
 import { ListComponent } from './list/list.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { LearningComponent } from './learning/learning.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     TasksComponent,
     NavbarComponent,
     CategoryClassComponent,
-    ListComponent
+    ListComponent,
+    LearningComponent
   ],
   imports: [
     FormsModule,

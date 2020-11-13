@@ -35,7 +35,10 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
     
     this.idb.getUserName().then((name) => {
-      this.login = name;
+      this.login=name;
+      if(name == null){
+        this.login='Imię'
+      }
       
     });
     this.idb.getAvatar().then((avatar) => {

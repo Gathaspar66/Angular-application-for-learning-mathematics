@@ -4,13 +4,15 @@ import { ListComponent } from './list/list.component';
 import { CategoryComponent } from './category/category.component';
 import { StartPageComponent } from './start-page/start-page.component';
 import { TasksComponent } from './tasks/tasks.component';
+import { LearningComponent } from './learning/learning.component';
 
 const routes: Routes = [
 {path: '',component: StartPageComponent},
 { path: 'category', component: CategoryComponent },
 { path: 'list', component: ListComponent },
 { path: 'tasks', component: TasksComponent},
-{path:'category-class',component: CategoryComponent}
+{path:'category-class',component: CategoryComponent},
+{path:'learning', component: LearningComponent}
 ];
 
 @NgModule({

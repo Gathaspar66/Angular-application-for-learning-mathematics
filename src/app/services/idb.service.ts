@@ -9,8 +9,6 @@ import { User } from '../models/user.model';
 export class IdbService {
   rows: User[] = [];
   db: any;
-  // jsonTask = (jsonTasks as any).tasks;
-  //jsonClass = (jsonClass as any).class;
   login: any;
   constructor() {
     this.createDb();
@@ -46,6 +44,13 @@ export class IdbService {
       category_id: categoryId,
       is_correct: isCorrect,
     });
+  }
+  public editUser(user: User) {
+    this.db.users.update(1, {name: user.name, avatar: user.avatar});
+  }
+
+  public counterUsers(){
+    return this.db.users.count();
   }
 
   getUserName(): Promise<any> {

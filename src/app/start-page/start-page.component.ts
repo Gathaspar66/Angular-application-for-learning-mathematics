@@ -9,15 +9,24 @@ import { Router } from '@angular/router';
 })
 export class StartPageComponent implements OnInit {
   user: User = new User();
+  counter : number;
   constructor(private idb: IdbService, private route: Router) {}
 
   ngOnInit(): void {
     this.nie();
   }
 
-  createUser() {
-    this.idb.addUser(this.user);
+  async createUser() {
+    
+   
+    if (await this.idb.counterUsers() == 0) {
+      this.idb.addUser(this.user);
+      
+    } else {
+      this.idb.editUser(this.user);
 
+    }
+    console.log(this.idb.counterUsers());
     this.route.navigate(['/category']);
   }
 
@@ -25,11 +34,13 @@ export class StartPageComponent implements OnInit {
   avatar:string;
   nie(){
     this.user.avatar='fa fa-wheelchair';
+    
   }
   
 
   tak(avatar) {
     this.isClicked = avatar;
    this.user.avatar=avatar;
-  }
+   
+}
 }

@@ -82,27 +82,36 @@
     </button>
   </div>
   <div class="modal-body" id="main">
-    <p>
-      <strong>Hurra udało Ci sie pomyślnie to zrobić. </strong>
-    </p>
+    
+      <div *ngIf="points==10">
+        <strong>Hurra udało Ci sie pomyślnie to zrobić. </strong>
+
+      </div>
+      <div *ngIf="wrong==3">
+        <strong>Niestety nie udało Ci sie. </strong>
+
+      </div>
+      
+    
     
   </div>
   <div class="modal-footer" id="footer">
     <button
       type="button"
-      class="btn-dark"
+      class="btn-success"
       id="releaseRoomBtn"
-      
+      (click)="modalRef.hide()"
     >
-      Release room
+    Kontynuuj
     </button>
     <button
       type="button"
-      class="btn-dark"
+      class="btn-danger"
       id="releaseRoomBtn"
-      
+      routerLink="/category-class"
+      (click)="modalRef.hide()"
     >
-      Release room
+      Spróbuj od nowa
     </button>
   </div>
 </ng-template>
