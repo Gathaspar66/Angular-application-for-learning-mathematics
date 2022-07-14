@@ -1,6 +1,7 @@
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
+The project is a mathematics learning application developed for the purpose of learning.
 
 ## Development server
 
