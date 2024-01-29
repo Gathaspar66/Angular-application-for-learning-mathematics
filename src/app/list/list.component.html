@@ -1,0 +1,30 @@
+<a href="#" class="square_back d-block  mr-auto" routerLink="/category-class" style="margin-left: 1vh;"><i class="fa fa-chevron-left"></i> Powrót</a>
+
+<div class="form-group1" style="overflow: scroll; height: 70vh;margin-top: 1rem;">
+    <ul *ngFor="let oneCategory of category">
+        <a *ngIf="oneCategory.id == id" routerLink="/tasks">
+          <div>
+            <table style="margin-left: 55vh;">
+<tr>
+
+  <th>
+    <button
+    style="width: 15rem; font-size: 2rem"
+    class="btn btn-success"
+    (click)="onSubmit(oneCategory.idCategory)"
+  >
+    {{ oneCategory.name }}
+  </button>
+
+  </th>
+  <th>
+    <i style="color: green;font-size: 2rem; margin-left: 2vh; " *ngIf="checkIfCorrect(oneCategory.idCategory) " class="fa fa-check  " aria-hidden="true "></i>
+
+  </th>
+</tr>
+    </table>
+    </div>
+      </a>
+
+  </ul>
+</div>

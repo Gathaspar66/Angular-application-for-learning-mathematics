@@ -26,5 +26,27 @@
         ]
       }
     }
+  ],
+  "dataGroups": [
+    {
+      "name": "jokes-api",
+      "urls": ["http://127.0.0.1:8080/assets/list.json"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 20,
+        "maxAge": "1h",
+        "timeout": "5s"
+      }
+    },
+    {
+      "name": "jokes-api",
+      "urls": ["http://127.0.0.1:8080/assets/tasks.json"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 20,
+        "maxAge": "1h",
+        "timeout": "5s"
+      }
+    }
   ]
 }

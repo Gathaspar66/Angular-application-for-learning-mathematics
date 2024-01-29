@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+
+html{
+    font-size: calc(10px + (20 - 10)*(100vw - 400px)/(1920 - 400));
+    background-image: url(./image/back.png);
+  }
+  
+ 
+
+  #pleaserotate-graphic {
+      fill: #fff;
+  }
+
+  #pleaserotate-backdrop {
+      color: #fff;
+      background-color: #000;
+  }

@@ -1,0 +1,62 @@
+<html style="background-color:#627295 ;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<body>
+
+    <div class="navbar  " >
+      <div class="contentTime" style="margin-top: -2vh;">
+        
+        <div *ngIf="router.url === '/category'">
+          Wybierz kategorię
+        </div>
+        <div *ngIf="router.url === '/category-class'">
+          Wybierz klasę
+        </div>
+        <div  *ngIf="router.url === '/list?id=1'||router.url === '/list?id=2'||router.url === '/list?id=3'">
+          Wybierz rodzaj zadań
+        </div>
+        <div *ngIf="router.url == '/tasks'">
+          Zadania
+        </div>
+      </div>
+
+
+      <div *ngIf="router.url == '/tasks'" style="margin-left: 70px;">
+        <div *ngIf="wrong == 0 ">
+        <div style="color: red;"><i class="fa fa-heart" aria-hidden="true" ></i> <i class="fa fa-heart" aria-hidden="true" ></i><i class="fa fa-heart" aria-hidden="true" > </i> </div>
+      </div>
+
+        <div *ngIf="wrong == 1 ">
+          <div style="color: red;"><i class="fa fa-heart" aria-hidden="true" ></i><i class="fa fa-heart" aria-hidden="true" > </i> </div>
+        </div>
+
+          <div *ngIf="wrong == 2 ">
+            <div style="color: red;"><i class="fa fa-heart" aria-hidden="true" ></i></div>
+          </div>
+            <div *ngIf="wrong == 3 ">
+
+
+            </div>
+        
+      
+
+    
+</div>
+
+
+
+<p routerLink="/" style="font-size: 2rem; color: white;margin-top: 1vh;width: 50vh ;margin-right: -10vh;"><a class=""><i  class="{{avatar}} " aria-hidden="true"></i> </a> {{login}}</p>
+</div>
+      
+        
+      
+</body>
+
+
+
+
+
+
+
+

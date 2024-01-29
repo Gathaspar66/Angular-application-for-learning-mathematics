@@ -1,0 +1,119 @@
+
+<div><a  class="square_btn">Dobrze {{points}} <i class="fa fa-check" aria-hidden="true"></i></a> <a href="#" class="square_back" routerLink="/category-class"><i class="fa fa-chevron-left"></i> Powrót</a></div>
+<a  class="square_btn1">Źle {{wrong}} <i class="fa fa-times" aria-hidden="true"></i></a>
+
+<div class="form-group1">
+  
+<div *ngFor="let oneTask of tasks" style="margin-top: -50px;" >
+
+    <a *ngIf="oneTask.idCategory==idCategory && oneTask.id == temp" style="margin-top: 30rem;text-align: center; "><div style="margin-left: 35vh;margin-right: 35vh; text-align: center;"  >{{oneTask.content}} <div style="font-size: 6rem;">{{oneTask.action}}  </div> </div>
+
+      <!-- <img src="">   -->  
+      <div *ngIf="oneTask.isInput=='false'; else elseBlock">
+        
+        <table style="width: 80%;margin-left: 10%;margin-right: 10%;">
+          <tr>
+            <th>
+                <button class="btn btn-success" (click)="checkAnswer(oneTask.answer_a,oneTask.correct_answer,templateConfirm)" >{{oneTask.answer_a}}</button>
+             
+            </th>
+            <th>
+                
+                <button class="btn btn-info" (click)="checkAnswer(oneTask.answer_b,oneTask.correct_answer,templateConfirm)">{{oneTask.answer_b}}</button>
+              
+            </th>
+            <th>
+                <button class="btn btn-danger" (click)="checkAnswer(oneTask.answer_c,oneTask.correct_answer,templateConfirm)">{{oneTask.answer_c}}</button>
+            </th>
+            <th>
+                <button class="btn btn-primary" (click)="checkAnswer(oneTask.answer_d,oneTask.correct_answer,templateConfirm)">{{oneTask.answer_d}}</button>
+            </th>
+          </tr>
+          
+          
+    
+        </table>
+
+
+
+
+
+      
+
+      
+    
+  
+</div>
+<ng-template #elseBlock>
+
+  <form (ngSubmit)="checkAnswer(numberFromInput,oneTask.correct_answer,templateConfirm)">
+    <div class="form-group">
+      <input [(ngModel)]="numberFromInput" name="name" maxlength="3" type="number" class="form-control" style="font-size:1.5rem;width: 20vh;text-align:center ;width: 50%;margin-left: 25%;margin-right: 25%;">
+      <button type="submit" class="btn2 btn-primary" style="margin-top: 1vh;font-size: 2rem;">Sprawdź</button>
+    </div>
+    
+  </form>
+
+
+
+</ng-template>
+</a>
+</div> 
+
+<ng-template #templateConfirm>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-title">Powiadomienie</h4>
+    <button
+      type="button"
+      class="close pull-right"
+      aria-label="Close"
+      (click)="modalRef.hide()"
+    >
+      <span
+        aria-hidden="true"
+        style="
+          float: right;
+          font-size: 60px;
+          color: white;
+          margin-top: -15px;
+        "
+      >&times;</span
+      >
+    </button>
+  </div>
+  <div class="modal-body" id="main">
+    
+      <div *ngIf="points==10">
+        <strong>Hurra udało Ci sie pomyślnie to zrobić. </strong>
+
+      </div>
+      <div *ngIf="wrong==3">
+        <strong>Niestety nie udało Ci sie. </strong>
+
+      </div>
+      
+    
+    
+  </div>
+  <div class="modal-footer" id="footer">
+    <button
+      type="button"
+      class="btn-success"
+      id="releaseRoomBtn"
+      (click)="modalRef.hide()"
+    >
+    Kontynuuj
+    </button>
+    <button
+      type="button"
+      class="btn-danger"
+      id="releaseRoomBtn"
+      routerLink="/category-class"
+      (click)="modalRef.hide()"
+    >
+      Spróbuj od nowa
+    </button>
+  </div>
+</ng-template>
+
+</div>

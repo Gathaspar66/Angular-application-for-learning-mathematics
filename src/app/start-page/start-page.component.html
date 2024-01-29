@@ -1,0 +1,155 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+  crossorigin="anonymous"
+/>
+<div class="container">
+  <div class="row">
+    <div class="container" id="formContainer">
+      <form (ngSubmit)="createUser()">
+        <div class="form-group1">
+          <h3 class="form-signin-heading">Wpisz imie</h3>
+          <input
+          maxlength="10"
+            type="name"
+            class="form-control"
+            required=""
+            [(ngModel)]="user.name"
+            name="name"
+            minlength=1
+          />
+        </div>
+        <div class="form-group2">
+          <h3 class="form-signin-heading">Wybierz avatar</h3>
+
+          <div id="startPanelHeader"></div>
+          <div id="startPanelBody">
+            <ul id="noneDotsList" style="overflow: scroll; height: 25vh">
+              <table style="width: 100%">
+                <tr>
+                  <th>
+                    
+                    <div [ngStyle]="isClicked=='fa fa-futbol-o' && { color: 'red' }">
+                      <i
+                        class="fa fa-futbol-o"
+                        aria-hidden="true"
+                        style="font-size: 2rem"
+                        
+                        
+                        
+                        (click)="tak('fa fa-futbol-o')"
+                      ></i>
+                    </div>
+                  </th>
+                  <th>
+                    
+                    <div [ngStyle]="isClicked=='fa fa-taxi' && { color: 'red' }">
+                      <i
+                        class="fa fa-taxi"
+                        aria-hidden="true"
+                        style="font-size: 2rem"
+                        
+                        (click)="tak('fa fa-taxi')"
+                      ></i>
+                    </div>
+                  </th>
+                  <th>
+                    
+                    <div [ngStyle]="isClicked=='fa fa-bicycle' && { color: 'red' }">
+                      <i
+                        class="fa fa-bicycle"
+                        aria-hidden="true"
+                        style="font-size: 2rem"
+                        
+                        (click)="tak('fa fa-bicycle')"
+                      ></i>
+                    </div>
+                  </th>
+                </tr>
+                <tr>
+                  <td> 
+                    <div [ngStyle]="isClicked=='fa fa-anchor' && { color: 'red' }">
+                      <i
+                      class="fa fa-anchor"
+                        aria-hidden="true"
+                        style="font-size: 2rem"
+                        
+                        (click)="tak('fa fa-anchor')"
+                      ></i>
+                    </div></td>
+                  <td> 
+                    <div [ngStyle]="isClicked=='fa fa-motorcycle' && { color: 'red' }">
+                      <i
+                      class="fa fa-motorcycle"
+                        aria-hidden="true"
+                        style="font-size: 2rem"
+                        
+                        (click)="tak('fa fa-motorcycle')"
+                      ></i>
+                    </div></td>
+                  <td> 
+                    <div [ngStyle]="isClicked=='fa fa-plane' && { color: 'red' }">
+                      <i
+                      class="fa fa-plane"
+                        aria-hidden="true"
+                        style="font-size: 2rem"
+                        
+                        (click)="tak('fa fa-plane')"
+                      ></i>
+                    </div></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <div [ngStyle]="isClicked=='fa fa-space-shuttle' && { color: 'red' }">
+                      <i
+                      class="fa fa-space-shuttle"
+                        aria-hidden="true"
+                        style="font-size: 2rem"
+                       
+                        (click)="tak('fa fa-space-shuttle')"
+                      ></i>
+                    </div></td>
+                  <td> 
+                    <div [ngStyle]="isClicked=='fa fa-truck' && { color: 'red' }">
+                      <i
+                      class="fa fa-truck"
+                        aria-hidden="true"
+                        style="font-size: 2rem"
+                       
+                        (click)="tak('fa fa-truck')"
+                      ></i>
+                    </div></td>
+                  <td> 
+                    <div [ngStyle]="isClicked=='fa fa-train'&& { color: 'red' }">
+                      <i
+                      class="fa fa-train"
+                        aria-hidden="true"
+                        style="font-size: 2rem"
+                        
+                        (click)="tak('fa fa-train')"
+                      ></i>
+                    </div></td>
+                </tr>
+              </table>
+              <div></div>
+
+              <div></div>
+              <div></div>
+            </ul>
+          </div>
+        </div>
+        <div class="form-group3">
+          <button class="btn btn-lg btn-success btn-block"  type="submit">
+            Akceptuj
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- /container -->
+  </div>
+</div>

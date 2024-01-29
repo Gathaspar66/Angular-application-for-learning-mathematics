@@ -1,0 +1,60 @@
+.form-group1 {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 3rem;
+}
+.list {
+  text-align: center;
+  margin-top: 2rem;
+}
+.btn {
+  width: 7rem;
+  font-size: 3rem;
+}
+.square_btn {
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #fff;
+  background-image: -webkit-linear-gradient(45deg, green 0%, #006633 100%);
+  background-image: linear-gradient(45deg, green 0%, #006633 100%);
+  transition: 0.4s;
+  margin-top: 1vh;
+  width: 10rem;
+  margin-right: 1vh;
+  text-align: center;
+  float: right;
+  position: relative;
+}
+.square_btn1 {
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #fff;
+  background-image: -webkit-linear-gradient(45deg, red 0%, #ff8b5f 100%);
+  background-image: linear-gradient(45deg, red 0%, #ff8b5f 100%);
+  transition: 0.4s;
+  margin-right: 1vh;
+  margin-top: 1vh;
+  width: 10rem;
+  text-align: center;
+  float: right;
+  position: relative;
+}
+
+.square_back {
+  font-size: 1.5rem;
+
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #fff;
+  background: #00bcd4;
+  transition: 0.4s;
+  margin-left: 1vh;
+  margin-top: 1vh;
+  margin-right: 1vh;
+}

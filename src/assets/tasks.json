@@ -1,0 +1,80 @@
+[{
+    "idCategory": "1",
+    "id": "1",
+    "content": "Oblicz:",
+    "action":"2+2",
+    "photo": "assets/biedra.jpg",
+    "isInput":"false",
+    "correct_answer": "4",
+    "answer_a": "4",
+    "answer_b": "2",
+    "answer_c": "1",
+    "answer_d": "5"
+},
+{
+    "idCategory": "1",
+    "id": "2",
+    "content": "Oblicz:",
+    "action":"2+3",
+    "photo": "assets/biedra.jpg",
+    "isInput":"true",
+    "correct_answer": "5",
+    "answer_a": "",
+    "answer_b": "",
+    "answer_c": "",
+    "answer_d": ""
+},
+{
+    "idCategory": "1",
+    "id": "3",
+    "content": "Oblicz:",
+    "action":"4+3",
+    "photo": "assets/biedra.jpg",
+    "isInput":"false",
+    "correct_answer": "7",
+    "answer_a": "2",
+    "answer_b": "5",
+    "answer_c": "4",
+    "answer_d": "7"
+},
+{
+    "idCategory": "1",
+    "id": "4",
+    "content": "Oblicz:",
+    "action":"2+1",
+    "photo": "assets/biedra.jpg",
+    "isInput":"false",
+    "correct_answer": "3",
+    "answer_a": "2",
+    "answer_b": "1",
+    "answer_c": "0",
+    "answer_d": "3"
+},
+{
+    "idCategory": "1",
+    "id": "5",
+    "content": "Oblicz:",
+    "action":"5+5",
+    "photo": "assets/biedra.jpg",
+    "isInput":"false",
+    "correct_answer": "10",
+    "answer_a": "1",
+    "answer_b": "0",
+    "answer_c": "10",
+    "answer_d": "2"
+},
+{
+    "idCategory": "1",
+    "id": "6",
+    "content": "Oblicz:",
+    "action":"4+4",
+    "photo": "assets/biedra.jpg",
+    "isInput":"true",
+    "correct_answer": "8",
+    "answer_a": "",
+    "answer_b": "",
+    "answer_c": "",
+    "answer_d": ""
+}
+
+]

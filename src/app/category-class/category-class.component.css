@@ -1,0 +1,32 @@
+.form-group1 {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .form-group2 {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .form-group3 {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .btn {
+    width: 11rem;
+    font-size: 3rem;
+  }
+  .square_back {
+    font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #00bcd4;
+    transition: .4s;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    margin-right: 1vh;
+  }
